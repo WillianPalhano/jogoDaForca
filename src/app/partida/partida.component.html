@@ -1,0 +1,51 @@
+<div class="main">
+    <h1>Categoria: Frutas</h1>
+    <img src="../../assets/forca.png" alt="">
+    <div class="footer">
+        <img src="../../assets/chao-verde.png" alt="">
+    </div>
+    <div class="corpo">
+        <div *ngIf="chances[0]" class="cabeca"></div>
+        <div *ngIf="chances[1]" class="tronco"></div>
+        <div *ngIf="chances[2]" class="membro braco esquerdo"></div>
+        <div *ngIf="chances[3]" class="membro braco direito"></div>
+        <div *ngIf="chances[4]" class="membro perna esquerdo"></div>
+        <div *ngIf="chances[5]" class="membro perna direito"></div>
+    </div>
+    <div class="palavra">
+        <div *ngFor="let letra of palavra">
+            <h1 *ngIf="letra.acertada">{{ letra.letra }}</h1>
+        </div>
+    </div>
+    <div class="teclado">
+        <div>
+            <h1 *ngFor="let letra of tecladoUm" (click)="selecionar(letra)" [ngStyle]="letra.ativa ? {'color' :'#fff', 'text-shadow' : '1px 4px 5px #000000'} : {'color' :'#000', 'text-shadow' : 'rgb(0 0 0 / 28%) 1px 4px 5px'}">{{ letra.letra }}</h1>
+        </div>
+        <div>
+            <h1 *ngFor="let letra of tecladoDois" (click)="selecionar(letra)" [ngStyle]="letra.ativa ? {'color' :'#fff', 'text-shadow' : '1px 4px 5px #000000'} : {'color' :'#000', 'text-shadow' : 'rgb(0 0 0 / 28%) 1px 4px 5px'}">{{ letra.letra }}</h1>
+        </div>
+    </div>
+    <div class="placar">
+        <div class="jogador">
+            <h1>Acertos: {{ acerto }}</h1>
+            <div class="icon um">
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="nuvem">
+            <div class="um"></div>
+            <div class="dois"></div>
+            <div class="tres">
+                <h1>Jogador, é a sua vez!</h1>
+            </div>
+        </div>
+        <div class="jogador">
+            <div class="icon dois">
+                <div></div>
+                <div></div>
+            </div>
+            <h1>Acertos: 0</h1>
+        </div>
+    </div>
+</div>

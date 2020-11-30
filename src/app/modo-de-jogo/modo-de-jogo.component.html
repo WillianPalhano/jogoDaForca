@@ -1,0 +1,20 @@
+
+<div class="main">
+    <h1>Jogo da<br>Forca</h1>
+    <img src="../../assets/forca.png" alt="">
+    <div class="footer">
+        <img src="../../assets/chao-verde.png" alt="">
+    </div>
+    <div class="content">
+        <h1 class="texto">Modo de Jogo</h1>
+        <button class="input">Um Jogador</button>
+        <button class="input">Vários Jogadores</button>
+        <label for="categorias" class="texto">Categoria</label>
+        <select class="input categorias" name="categorias" id="">
+            <option value="Frutas">Frutas</option>
+            <option value="Frutas">Países</option>
+            <option value="Frutas">Comida</option>
+        </select>
+        <input class="input" type="submit" value="Iniciar" (click)="navegar('/partida')">
+    </div>
+</div>

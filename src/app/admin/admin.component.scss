@@ -1,0 +1,130 @@
+.admin{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 290px;
+    height: 350px;
+    background: #0097A7;
+    position: absolute;
+    left: 700px;
+    bottom: 150px;
+    padding-top: 5px;
+    border-radius: 30px;
+    h1{
+        font-family: 'Balsamiq Sans';
+        font-size: 20px;
+        color: #fff;
+    }
+    .cabecalho{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100%;
+        h1{
+            margin: 5px 30px;
+        }
+    }
+    .pessoa{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        background: #FFB951;
+        border-radius: 50px;
+        margin: 5px;
+        h1{
+            margin: 5px 40px;
+            &:nth-child(3){
+                margin: 5px 100px !important;
+            }
+        }
+        >div{
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            left: 25px;
+            border-radius: 50px;
+        }
+        .online{
+            background: #00FF19;
+        }
+        .offline{
+            background: #929292;
+        }
+    }
+}
+
+.partida{
+    left: 400px;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 290px;
+    background: #0097A7;
+    position: absolute;
+    bottom: 150px;
+    padding-top: 5px;
+    border-radius: 30px;
+    h1{
+        font-family: 'Balsamiq Sans';
+        font-size: 20px;
+        color: #fff;
+        margin: 5px 40px;
+    }
+    .pessoa{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        background: #FFB951;
+        border-radius: 50px;
+        margin: 5px;
+        h1{
+            font-family: 'Balsamiq Sans';
+            font-size: 20px;
+            color: #fff;
+            margin: 5px 40px;
+            &:nth-child(3){
+                margin: 5px 100px !important;
+            }
+        }
+        >div{
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            left: 25px;
+            border-radius: 50px;
+        }
+        .online{
+            background: #00FF19;
+        }
+        .offline{
+            background: #929292;
+        }
+    }
+}
+
+.main h1{
+    left: 80px;
+    bottom: 490px;
+}
+
+.categorias{
+    background: #FFB951;
+    padding-left: 30px;
+    width: 90%;
+    font-size: 24px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+input[type="submit"]{
+    background: #FF9800 !important;
+    width: 180px !important;
+    font-size: 23px;
+    align-self: center;
+    height: 40px;
+}

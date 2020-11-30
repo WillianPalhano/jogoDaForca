@@ -1,0 +1,33 @@
+<div class="cadastro main">
+    <h1>Administração</h1>
+    <img src="../../assets/forca.png" alt="">
+    <div class="footer">
+        <img src="../../assets/chao-verde.png" alt="">
+    </div>    
+</div>
+
+<div class="admin">
+    <div class="cabecalho">
+        <h1>Jogadores</h1>
+    </div>
+    <div class="pessoa" *ngFor="let pessoa of pessoas ; let i = index" (click)="selecionar(pessoa)">
+        <div class="online" *ngIf="pessoa.online"></div>
+        <div class="offline" *ngIf="!pessoa.online"></div>
+        <h1>{{pessoa.nome}}</h1>
+    </div>
+</div>
+
+<div class="partida">
+    <h1>Partida</h1>
+    <div class="pessoa" *ngFor="let pessoa of pessoasSelecionadas ; let i = index" (click)="excluir(i)">
+        <div class="online" *ngIf="pessoa.online"></div>
+        <div class="offline" *ngIf="!pessoa.online"></div>
+        <h1>{{pessoa.nome}}</h1>
+    </div>
+    <select class="input categorias" name="categorias" id="">
+        <option value="Frutas">Frutas</option>
+        <option value="Frutas">Países</option>
+        <option value="Frutas">Comida</option>
+    </select>
+    <input class="input" type="submit" value="Iniciar" (click)="navegar('/partida')">
+</div>

@@ -1,0 +1,22 @@
+<div class="cadastro main">
+    <h1>Jogo da<br>Forca</h1>
+    <img src="../../assets/forca.png" alt="">
+    <div class="footer">
+        <img src="../../assets/chao-verde.png" alt="">
+    </div>    
+</div>
+
+<div class="ranking">
+    <div class="cabecalho">
+        <h1>Nome</h1>
+        <h1>Pontos</h1>
+    </div>
+    <div class="pessoa" *ngFor="let pessoa of pessoas ; let i = index">
+        <div class="ouro" *ngIf="i == 0"></div>
+        <div class="prata" *ngIf="i == 1"></div>
+        <div class="bronze" *ngIf="i == 2"></div>
+        <div class="outro" *ngIf="i >= 3"></div>
+        <h1>{{pessoa.nome}}</h1>
+        <h1>{{pessoa.acertos}}</h1>
+    </div>
+</div>

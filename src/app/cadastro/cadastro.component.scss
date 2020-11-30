@@ -1,0 +1,36 @@
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .input{
+        background: #FFB951;
+    }
+}
+
+.content{
+    align-items: start;
+    bottom: 100px;
+}
+
+.texto{
+    margin-left: 35px;
+    font-size: 30px;
+}
+
+.input{
+    margin: 5px;
+}
+
+input[type="checkbox"]{
+    width: 45px;
+    height: 45px;
+    margin: 0px 32px;
+}
+
+input[type="submit"]{
+    background: #FF9800 !important;
+    width: 264px;
+    font-size: 34px;
+    align-self: center
+}
